@@ -1,0 +1,106 @@
+/* font-family: "Playfair Display", serif;
+font-family: "Lobster Two", sans-serif; */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Custom properties---------------- */
+
+:root {
+	--ff-primary: "Lobster Two";
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-white:#fff;
+	--clr-pale-blue: #abc1d5;
+	--clr-pale-green: #3d7564;
+	--clr-dark-green: #32484f;
+	--clr-dark-blue:#012d52; 
+	--clr-black: #070619;
+	
+	--fs-h1: 70px;
+	--fs-h2: 50px;
+	--fs-h3: 25px;
+	--fs-p: 18px;
+}
+
+@media screen and (max-width: 800px) {
+	:root {
+		--fs-h1: 50px;
+		--fs-h2: 35px;
+		--fs-h3: 20px;
+		--fs-p: 16px;
+		line-height: 1.0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--fs-h1: 25px;
+		--fs-h2: 22px;
+		--fs-h3: 18px;
+		--fs-p: 14px;
+	}
+}	
+
+@media screen and (max-width: 430px) {
+	:root {
+		--fs-h1: 20px;
+		--fs-h2: 18px;
+		--fs-h3: 16px;
+		--fs-p: 12px;
+	}
+}	
+
+/* General styles---------------- */
+
+body {
+	background: linear-gradient(260deg, var(--clr-dark-blue) 25%, var(--clr-black)70%);
+	color: var(--clr-white);
+	margin: 0;
+	font-family: var(--ff-primary);
+	font-size: var(--fs-p);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul, li, p, a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Typography---------------- */
+
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
+}
+
+p {
+	font-size: var(--fs-p);
+}

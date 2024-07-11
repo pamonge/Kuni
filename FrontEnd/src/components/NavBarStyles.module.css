@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.container h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin-right: 2rem;
+}
+
+.menu li {
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  margin-right: 35px;
+  border: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.menu li:hover {
+  /* border: 1px solid var(--clr-white); */
+  text-shadow: 3px 5px 9px var(--clr-pale-blue), -5px -3px 9px var(--clr-white);
+  font-size: 22px;
+  transition: 0.7s;
+}

@@ -1,0 +1,22 @@
+.container {
+  text-align: justify;
+}
+
+.text {
+  margin: 3% 2%;
+  line-height: 1.5;
+}
+
+.text h4 {
+  text-align: center;
+  line-height: 2;
+}
+
+.quote, .reference {
+  font-style: italic;
+  color: var(--clr-pale-blue);
+}
+
+.reference {
+  text-align: right;
+}
